@@ -12,7 +12,7 @@ $fullName = $_SESSION['user_fullname'] ?? 'User';
                 <h4>Your Sales (Invoice Value)</h4>
                 <div class="stat-value"><?= number_format($stats['total_sales'] ?? 0, 2) ?> TK</div>
             </div>
-            <div class="stat-icon" style="color:var(--accent); background:rgba(99, 102, 241, 0.08);">
+            <div class="stat-icon" style="color:var(--accent); background:var(--accent-glow);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"/>
                     <line x1="12" y1="8" x2="12" y2="16"/>
@@ -51,7 +51,7 @@ $fullName = $_SESSION['user_fullname'] ?? 'User';
                 <h4>Total Sales</h4>
                 <div class="stat-value"><?= number_format($stats['total_sales'] ?? 0, 2) ?> TK</div>
             </div>
-            <div class="stat-icon" style="color:var(--accent); background:rgba(99, 102, 241, 0.08);">
+            <div class="stat-icon" style="color:var(--accent); background:var(--accent-glow);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="12" y1="1" x2="12" y2="23"/>
                     <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
@@ -86,9 +86,9 @@ $fullName = $_SESSION['user_fullname'] ?? 'User';
         <div class="stat-card">
             <div class="stat-details">
                 <h4>Stock Quantity</h4>
-                <div class="stat-value" style="color:#ffffff;"><?= $stats['total_stock'] ?? 0 ?> units</div>
+                <div class="stat-value" style="color:var(--text-primary);"><?= $stats['total_stock'] ?? 0 ?> units</div>
             </div>
-            <div class="stat-icon" style="color:#ffffff; background:rgba(255,255,255,0.03);">
+            <div class="stat-icon" style="color:var(--text-primary); background:rgba(12, 131, 31, 0.08);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
                 </svg>

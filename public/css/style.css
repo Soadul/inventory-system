@@ -4,34 +4,34 @@
    ---------------------------------------------------- */
 
 :root {
-    --bg-main: #0b0f19;
-    --bg-card: #131a2e;
-    --bg-sidebar: #0f1424;
-    --bg-header: #10162a;
+    --bg-main: #f4f6f5;
+    --bg-card: #ffffff;
+    --bg-sidebar: #ffffff;
+    --bg-header: #ffffff;
     
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --text-muted: #64748b;
+    --text-primary: #1a1e1b;
+    --text-secondary: #4a554f;
+    --text-muted: #72847a;
     
-    --accent: #6366f1;
-    --accent-glow: rgba(99, 102, 241, 0.25);
-    --accent-hover: #4f46e5;
+    --accent: #0c831f;
+    --accent-glow: rgba(12, 131, 31, 0.1);
+    --accent-hover: #076016;
     
-    --success: #10b981;
-    --success-glow: rgba(16, 185, 129, 0.15);
+    --success: #2e7d32;
+    --success-glow: rgba(46, 125, 50, 0.1);
     
-    --warning: #f59e0b;
-    --warning-glow: rgba(245, 158, 11, 0.15);
+    --warning: #ffc220;
+    --warning-glow: rgba(255, 194, 32, 0.15);
     
-    --danger: #ef4444;
-    --danger-glow: rgba(239, 68, 68, 0.15);
+    --danger: #d32f2f;
+    --danger-glow: rgba(211, 47, 47, 0.1);
 
-    --border: rgba(255, 255, 255, 0.06);
-    --border-hover: rgba(255, 255, 255, 0.12);
+    --border: #e1e6e3;
+    --border-hover: #cbd3cf;
     
-    --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --font: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
     
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: all 0.2s ease-in-out;
 }
 
 /* --- Base & Reset --- */
@@ -116,7 +116,7 @@ input, select, textarea, button {
 .profile-name {
     font-weight: 600;
     font-size: 0.95rem;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 .profile-role {
@@ -156,14 +156,14 @@ input, select, textarea, button {
 }
 
 .menu-item a:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.03);
+    color: var(--accent);
+    background: rgba(12, 131, 31, 0.04);
 }
 
 .menu-item.active a {
     color: #ffffff;
     background: var(--accent);
-    box-shadow: 0 4px 15px var(--accent-glow);
+    box-shadow: 0 4px 12px var(--accent-glow);
 }
 
 .sidebar-footer {
@@ -252,14 +252,14 @@ input, select, textarea, button {
 .stat-value {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 .stat-icon {
     width: 48px;
     height: 48px;
     border-radius: 10px;
-    background: rgba(255,255,255,0.02);
+    background: rgba(12, 131, 31, 0.05);
     border: 1px solid var(--border);
     display: flex;
     align-items: center;
@@ -343,6 +343,10 @@ input, select, textarea, button {
     border-radius: 6px;
 }
 
+.btn-block {
+    width: 100%;
+}
+
 /* --- Tables & Lists --- */
 .table-responsive {
     width: 100%;
@@ -374,7 +378,7 @@ input, select, textarea, button {
 }
 
 .table tr:hover td {
-    background: rgba(255,255,255,0.01);
+    background: rgba(12, 131, 31, 0.02);
 }
 
 /* Low Stock Warnings */
@@ -397,7 +401,7 @@ input, select, textarea, button {
 .low-stock-details h5 {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 .low-stock-details span {
@@ -445,7 +449,7 @@ input, select, textarea, button {
 .form-control {
     width: 100%;
     padding: 12px 16px;
-    background: rgba(255,255,255,0.02);
+    background: #f8fafc;
     border: 1px solid var(--border);
     border-radius: 8px;
     outline: none;
@@ -456,7 +460,7 @@ input, select, textarea, button {
 .form-control:focus {
     border-color: var(--accent);
     box-shadow: 0 0 10px var(--accent-glow);
-    background: rgba(255,255,255,0.04);
+    background: #ffffff;
 }
 
 .form-control:disabled {
@@ -534,7 +538,7 @@ input, select, textarea, button {
     border: 1px solid var(--border);
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
 .login-brand {

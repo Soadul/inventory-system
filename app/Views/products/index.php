@@ -64,7 +64,7 @@ $role = $_SESSION['user_role'] ?? '';
                                 <td style="text-align: center;">
                                     <div style="display:flex; justify-content:center; gap:8px;">
                                         <a href="<?= $this->getUrl("products/restock/{$prod['id']}") ?>" class="btn btn-secondary btn-sm" style="color:var(--success); border-color:rgba(16, 185, 129, 0.2);" title="Increase Stock">Restock</a>
-                                        <a href="<?= $this->getUrl("products/edit/{$prod['id']}") ?>" class="btn btn-secondary btn-sm" style="color:var(--accent); border-color:rgba(99, 102, 241, 0.2);" title="Modify specifications">Edit</a>
+                                        <a href="<?= $this->getUrl("products/edit/{$prod['id']}") ?>" class="btn btn-secondary btn-sm" style="color:var(--accent); border-color:var(--accent-glow);" title="Modify specifications">Edit</a>
                                         <a href="<?= $this->getUrl("products/delete/{$prod['id']}") ?>" class="btn btn-secondary btn-sm" style="color:var(--danger); border-color:rgba(239, 68, 68, 0.2);" onclick="return confirm('Terminate product catalog record? This is irreversible.')" title="Delete product">Delete</a>
                                     </div>
                                 </td>

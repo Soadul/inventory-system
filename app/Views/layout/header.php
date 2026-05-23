@@ -133,7 +133,7 @@ $fullName = $_SESSION['user_fullname'] ?? 'Guest';
         <div class="header-panel">
             <h1 class="page-title"><?= htmlspecialchars($title ?? 'Inventory Panel') ?></h1>
             <div class="header-datetime" style="font-size:0.9rem; color:var(--text-secondary);">
-                📅 Current Audit Time: <span style="color:#ffffff; font-weight:600;"><?= date('Y-m-d') ?></span>
+                📅 Current Audit Time: <span style="color:var(--accent); font-weight:600;"><?= date('Y-m-d') ?></span>
             </div>
         </div>
 
