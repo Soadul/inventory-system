@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  inventory_app:
+    build: .
+    container_name: inventory_app
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    restart: always
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data

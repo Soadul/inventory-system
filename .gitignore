@@ -1,0 +1,17 @@
+# PHP & Framework files
+/vendor/
+
+# Database files (SQLite)
+# Since the system is self-healing, the DB compiles automatically on launch
+/app/database/*.sqlite
+/app/database/*.sqlite-journal
+/app/database/*.sqlite-wal
+/app/database/*.sqlite-shm
+
+# Docker files
+.docker/
+*.log
+
+# OS temporary files
+.DS_Store
+Thumbs.db
