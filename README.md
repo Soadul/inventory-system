@@ -108,3 +108,4 @@ If you have a local PHP web server installed on your host system:
    php -S localhost:8000 -t public
    ```
 3. Visit `http://localhost:8000` in your web browser!
+# inventory-system
